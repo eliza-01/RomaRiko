@@ -25,7 +25,7 @@ COPY assets/ /app/assets/
 RUN npm run build
 
 
-FROM nginx:1.27-alpine AS production
+FROM nginx:stable-alpine AS production
 
 COPY frontend/nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/frontend/dist/ /usr/share/nginx/html/
