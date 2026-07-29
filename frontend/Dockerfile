@@ -7,7 +7,6 @@ WORKDIR /app/frontend
 COPY frontend/package.json ./
 RUN npm install
 
-
 FROM dependencies AS development
 
 COPY frontend/ ./
@@ -16,14 +15,12 @@ EXPOSE 4321
 
 CMD ["npm", "run", "dev"]
 
-
 FROM dependencies AS build
 
 COPY frontend/ ./
 COPY assets/ /app/assets/
 
 RUN npm run build
-
 
 FROM nginx:stable-alpine AS production
 
