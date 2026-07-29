@@ -56,4 +56,4 @@ FRONTEND_PROD_PORT=8088 docker compose --profile production up --build frontend-
 - Astro uses the repository-level `assets/` directory as its public asset source.
 - The archived snapshot and its assets remain untouched.
 - Development dependencies are stored in the Docker volume `frontend_node_modules`.
-- No `.gitignore` file was added or changed.
+- No `.gitignore` file was added or changed, so every source/configuration change remains visible in Git.
