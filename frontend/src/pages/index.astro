@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const hero = '/cdn-st2.vigbo.com/u17322/23029/blog/6342981/6005748/section/866a52df6d3e6eb80a3aadb68e40165d.jpg';
+const projects = [
+  { title: 'La Bohème', label: 'Камерная свадьба', image: hero },
+  { title: 'Palermo', label: 'Wedding dinner', image: '/cdn-st2.vigbo.com/u17322/23029/blog/6342981/6005747/108765514/1000-svadebnii-organizator-Minsk-romariko-wedding-studio-0ae26be865b347f1918ed8ad22153cf5.jpg' },
+  { title: 'Sumerki', label: 'Свадебная вечеринка', image: hero },
+];
+---
+<BaseLayout
+  title="ROMA & RIKO STUDIO — организация камерных свадеб"
+  description="Стильные и атмосферные камерные свадьбы, свадебные ужины и вечеринки в Минске и за его пределами."
+>
+  <header class="site-header">
+    <div class="container header-inner">
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+      </nav>
+      <a class="logo" href="/" aria-label="Roma and Riko — главная">ROMA &amp; RIKO</a>
+      <nav class="nav" aria-label="Дополнительная навигация">
+        <a href="/blog">Блог</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media"><img src={hero} alt="Камерная свадьба Roma & Riko" fetchpriority="high" /></div>
+      <div class="hero-content container">
+        <span class="eyebrow">Wedding & event studio · Minsk</span>
+        <h1>Свадьбы с характером</h1>
+        <p>Организовываем стильные и атмосферные события с 2013 года</p>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container intro-grid">
+        <div>
+          <span class="eyebrow">Roma & Riko Studio</span>
+          <div class="intro-stats" style="margin-top: 54px">
+            <div class="stat"><strong>13</strong><span>лет создаём события</span></div>
+            <div class="stat"><strong>200+</strong><span>реализованных проектов</span></div>
+          </div>
+        </div>
+        <div>
+          <h2 class="section-title">События, в которых всё про вас</h2>
+          <p class="copy">Мы создаём камерные свадьбы, свадебные ужины и вечеринки, где эстетика не существует отдельно от эмоций. Собираем сильную команду, продумываем сценарий дня и бережно ведём проект от первой встречи до последнего танца.</p>
+          <a class="button" href="#contact">Обсудить событие</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <span class="eyebrow">Форматы</span>
+        <div class="services" style="margin-top: 34px">
+          <article class="service"><span class="eyebrow">01</span><h3>Свадебный ужин</h3><p>Небольшое, тонко выстроенное событие для самых близких — с акцентом на атмосферу, вкус и общение.</p></article>
+          <article class="service"><span class="eyebrow">02</span><h3>Камерная свадьба</h3><p>Полная организация свадьбы: концепция, площадка, команда, декор, тайминг и координация дня.</p></article>
+          <article class="service"><span class="eyebrow">03</span><h3>Wedding party</h3><p>Свободный формат без лишних условностей: музыка, красивый свет, ужин и праздник в вашем ритме.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <span class="eyebrow">Selected projects</span>
+        <h2 class="section-title" style="margin-top: 22px">Истории, которые мы создали</h2>
+        <div class="projects-grid">
+          {projects.map((project) => (
+            <a class="project" href="/portfolio">
+              <img src={project.image} alt={project.title} loading="lazy" />
+              <div class="project-copy"><span class="eyebrow">{project.label}</span><h3>{project.title}</h3></div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="container">
+        <blockquote>«Красиво» — это только начало. Важно, чтобы этот день ощущался вашим.</blockquote>
+        <cite>Команда Roma & Riko</cite>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">Начнём знакомство?</span>
+          <h2 class="section-title" style="margin-top: 24px">Расскажите нам о будущем событии</h2>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:hello@romariko.by">hello@romariko.by</a>
+          <a href="tel:+375000000000">+375 (00) 000-00-00</a>
+          <a class="button" href="mailto:hello@romariko.by">Написать нам</a>
+        </div>
+      </div>
+      <div class="container footer" style="margin-top: 100px">
+        <span>© {new Date().getFullYear()} Roma & Riko Studio</span>
+        <span>Минск · Беларусь</span>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
