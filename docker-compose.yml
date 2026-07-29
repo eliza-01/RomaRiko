@@ -7,7 +7,7 @@ services:
       dockerfile: frontend/Dockerfile
       target: development
     working_dir: /app/frontend
-    command: npm run dev -- --host 0.0.0.0
+    command: npm run dev
     ports:
       - "${FRONTEND_PORT:-4321}:4321"
     volumes:
