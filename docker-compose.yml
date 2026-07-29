@@ -1,0 +1,34 @@
+name: romariko
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      target: development
+    working_dir: /app/frontend
+    command: npm run dev -- --host 0.0.0.0
+    ports:
+      - "${FRONTEND_PORT:-4321}:4321"
+    volumes:
+      - ./frontend:/app/frontend
+      - ./assets:/app/assets:ro
+      - frontend_node_modules:/app/frontend/node_modules
+    environment:
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: "true"
+    restart: unless-stopped
+
+  frontend-production:
+    profiles:
+      - production
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      target: production
+    ports:
+      - "${FRONTEND_PROD_PORT:-8080}:80"
+    restart: unless-stopped
+
+volumes:
+  frontend_node_modules:
