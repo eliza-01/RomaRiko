@@ -17,6 +17,14 @@ services:
     environment:
       NODE_ENV: development
       CHOKIDAR_USEPOLLING: "true"
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - wget -qO- http://127.0.0.1:4321/ >/dev/null || exit 1
+      interval: 30s
+      timeout: 3s
+      start_period: 15s
+      retries: 3
     restart: unless-stopped
 
   frontend-production:
