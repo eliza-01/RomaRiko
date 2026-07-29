@@ -24,16 +24,16 @@ To stop the project:
 docker compose down
 ```
 
-To recreate the dependency volume after changing dependencies:
+To recreate the dependency volume after changing `package.json`:
 
 ```bash
 docker compose down -v
 docker compose up --build
 ```
 
-## Production build through Docker
+## Production through Docker
 
-Build and run the static production site through Nginx:
+Build the Astro site and run the result through Nginx:
 
 ```bash
 docker compose --profile production up --build frontend-production
@@ -62,10 +62,11 @@ FRONTEND_PROD_PORT=8088 docker compose --profile production up --build frontend-
 
 ## Project notes
 
+- All development and production commands run through Docker.
 - Astro uses the repository-level `assets/` directory as its public asset source.
 - The archived snapshot and its assets remain untouched.
 - Development dependencies are stored in the Docker volume `frontend_node_modules`.
-- No `.gitignore` changes are required for this setup.
+- No `.gitignore` file was added or changed.
 
 ## Current scope
 
