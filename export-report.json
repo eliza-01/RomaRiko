@@ -1,0 +1,236 @@
+{
+  "exportedAt": "2026-07-29T00:21:17.456Z",
+  "sourceUrl": "https://romariko.by/",
+  "mode": "site",
+  "pagesSaved": 97,
+  "resourcesSaved": 11833,
+  "fetchedBytes": 785990109,
+  "blobsNotSaved": [],
+  "failures": [
+    {
+      "type": "resource",
+      "url": "https://cdn-st2.vigbo.com/u17322/23029/blog/1722815/484916/4798436/2000-63bcda999255b8171987086db505cd95.jpg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/font/MuseoSansCyrl%20300.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/font/MuseoSansCyrl%20500.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/font/MuseoSansCyrl%20700.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/angleciaprodisplay-regular.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/anonymouspro-bold.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/anonymouspro-regular.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/bebasneue-bold.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/bebasneue-light.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/bebasneue-regular.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/bitter-bold.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/bitter-regular.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/charissilb.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/charissilr.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/clinicapro-regular.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/comic-sans-ms.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/cormorant-bold.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/cormorant-light.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/cormorant-regular.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/crimson-roman.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/cynthopro-regular.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/cynthoslabpro-regular.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/dejavusans-bold.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/dejavusans-extralight.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/dejavusans.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/dejavuserif-bold.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/dejavuserif.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/droidsans-bold.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/droidsansmono.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/droidsans.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/droidserif-bold.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/droidserif-regular.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/firacode-bold.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/firacode-regular.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/firasans-bold.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/firasanscondensed-bold.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/firasanscondensed-light.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/firasanscondensed-regular.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/firasans-light.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/firasans-regular.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/geometria-light.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/kelvinch-bold.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/kelvinch-roman.svg",
+      "error": "HTTP 404"
+    },
+    {
+      "type": "resource",
+      "url": "https://cdn-s.vigbo.com/cms/kevin2/site/dev/fontspack/lato-regular-italic.eot",
+      "error": "Достигнут общий лимит размера архива"
+    }
+  ],
+  "notes": [
+    "Archive entries are stored without ZIP compression.",
+    "Serve the extracted directory through a local HTTP server for best compatibility.",
+    "Server-side source code and databases cannot be obtained through a browser extension."
+  ]
+}
