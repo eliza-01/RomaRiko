@@ -1,0 +1,42 @@
+name: romariko
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      target: development
+    working_dir: /app/frontend
+    command: npm run dev
+    ports:
+      - "${FRONTEND_PORT:-4321}:4321"
+    volumes:
+      - ./frontend:/app/frontend
+      - ./assets:/app/assets:ro
+      - frontend_node_modules:/app/frontend/node_modules
+    environment:
+      NODE_ENV: development
+      CHOKIDAR_USEPOLLING: "true"
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - wget -qO- http://127.0.0.1:4321/ >/dev/null || exit 1
+      interval: 30s
+      timeout: 3s
+      start_period: 15s
+      retries: 3
+    restart: unless-stopped
+
+  frontend-production:
+    profiles:
+      - production
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+      target: production
+    ports:
+      - "${FRONTEND_PROD_PORT:-8080}:80"
+    restart: unless-stopped
+
+volumes:
+  frontend_node_modules:
