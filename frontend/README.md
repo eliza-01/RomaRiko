@@ -2,7 +2,7 @@
 
 Modern static frontend rebuilt from the archived site snapshot.
 
-## Development through Docker
+## Development
 
 Run from the repository root:
 
@@ -10,40 +10,32 @@ Run from the repository root:
 docker compose up --build
 ```
 
-Open:
+Open `http://localhost:4321`.
 
-```text
-http://localhost:4321
-```
+The container runs Astro with hot reload. `frontend/` is mounted into the container, while the repository-level `assets/` directory is mounted read-only.
 
-The development container runs Astro with hot reload. The `frontend/` directory is mounted into the container, while the repository-level `assets/` directory is mounted read-only.
-
-To stop the project:
+Stop the project:
 
 ```bash
 docker compose down
 ```
 
-To recreate the dependency volume after changing `package.json`:
+Recreate installed dependencies after changing `package.json`:
 
 ```bash
 docker compose down -v
 docker compose up --build
 ```
 
-## Production through Docker
+## Production
 
-Build the Astro site and run the result through Nginx:
+Build Astro and serve the static result through Nginx:
 
 ```bash
 docker compose --profile production up --build frontend-production
 ```
 
-Open:
-
-```text
-http://localhost:8080
-```
+Open `http://localhost:8080`.
 
 Stop the production container:
 
@@ -51,26 +43,17 @@ Stop the production container:
 docker compose --profile production down
 ```
 
-## Ports
-
-Ports can be overridden without changing Compose:
+## Custom ports
 
 ```bash
 FRONTEND_PORT=3000 docker compose up --build
 FRONTEND_PROD_PORT=8088 docker compose --profile production up --build frontend-production
 ```
 
-## Project notes
+## Notes
 
 - All development and production commands run through Docker.
 - Astro uses the repository-level `assets/` directory as its public asset source.
 - The archived snapshot and its assets remain untouched.
 - Development dependencies are stored in the Docker volume `frontend_node_modules`.
 - No `.gitignore` file was added or changed.
-
-## Current scope
-
-- responsive home page;
-- base visual system derived from the original site;
-- reusable layout and global styles;
-- original snapshot preserved outside `frontend/`.
